@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                var=$(sh 'npm --version')
+                var=$('npm --version')
                 echo $var
             }
         }
